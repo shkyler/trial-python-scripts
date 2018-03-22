@@ -12,4 +12,6 @@ with open("data/iris.csv", "r") as myfile:
     counter = counter + 1
   mean = sums/counter
   print("The average sepal lenght is: " + str(round(mean,2)) + " cms")
+  print(round(sums,1))
+  print(counter)
 
