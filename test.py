@@ -26,17 +26,22 @@ def mean(x,type):
   avg = sum(x,type)/count(x,type)
   return avg
 
-print(round(sum(0,'setosa'),2))
-print(round(sum(0,'versicolor'),2))
-print(round(sum(0,'virginica'),2))
-print(round(sum(0,'all'),2))
+#print(round(sum(0,'setosa'),2))
+#print(round(sum(0,'versicolor'),2))
+#print(round(sum(0,'virginica'),2))
+#print(round(sum(0,'all'),2))
 
-print(count(0,'all'))
-print(count(0,'setosa'))
-print(count(0,'versicolor'))
-print(count(0,'virginica'))
+#print(count(0,'all'))
+#print(count(0,'setosa'))
+#print(count(0,'versicolor'))
+#print(count(0,'virginica'))
 
-print(round(mean(0,'setosa'),2))
-print(round(mean(0,'versicolor'),2))
-print(round(mean(0,'virginica'),2))
-print(round(mean(0,'all'),2))
+#print(round(mean(0,'setosa'),2))
+#print(round(mean(0,'versicolor'),2))
+#print(round(mean(0,'virginica'),2))
+#print(round(mean(0,'all'),2))
+
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4],[1,4,9,16])
+plt.ylabel('some numbers')
+plt.show()
