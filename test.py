@@ -26,7 +26,7 @@ def mean(x,type):
   avg = sum(x,type)/count(x,type)
   return avg
 
-def input(x,type):                                      # sum(x) is a function that takes an argument of 'x' and then returns the sum of the values in column 'x'
+def list_input(x,type):                                     #https://stackoverflow.com/questions/19139621/python-matplotlib-scatter-plot-changing-colour-of-data-points-based-on-given-c
   with open("data/iris.csv", "r") as myfile:     # this statement opens the iris data set as an object called myfile                  
     values = []                                     # this initialises a variable that will used to store the values of the sum
     for line in myfile:                          # this loop run through the rows of the file one at a time
@@ -53,9 +53,9 @@ def input(x,type):                                      # sum(x) is a function t
 #print(round(mean(0,'all'),2))
 
 import matplotlib.pyplot as plt
-plt.scatter(input(0,'setosa'),input(1,'setosa'), c='red')
-plt.scatter(input(0,'versicolor'),input(1,'versicolor'), c='blue')
-plt.scatter(input(0,'virginica'),input(1,'virginica'), c='green')
+plt.scatter(list_input(0,'setosa'),list_input(1,'setosa'), c='red')
+plt.scatter(list_input(0,'versicolor'),list_input(1,'versicolor'), c='blue')
+plt.scatter(list_input(0,'virginica'),list_input(1,'virginica'), c='green')
 plt.ylim([1,6])
 plt.xlim([3,9])
 plt.xlabel('Sepal Lenght')
