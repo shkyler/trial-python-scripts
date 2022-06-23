@@ -1,4 +1,4 @@
-# this is a test
+# this is a not a  test
 def compoundinterest(principle,rate,term):
   while term != 0:
     principle = principle + (principle*rate)/100
